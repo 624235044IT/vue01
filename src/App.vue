@@ -36,6 +36,13 @@
     <b>Name</b>: {{emp.name}},<br/> 
     <b>Salary</b>:{{emp.Salary}},<br/><br/><br/> 
   </div>
+  <hr/>
+  <div v-bind:key="stu.id" v-for="stu in students">
+    <b>studentId</b>:{{stu.id}},<br/> 
+    <b>firstname</b>:{{stu.name}},<br/> 
+    <b>lastName</b>:{{stu.lastName}},<br/>
+    <b>score</b>:{{stu.score}},<br/><br/><br/> 
+  </div>
 
 
 
@@ -72,7 +79,12 @@ export default {
       isGreeting: false,
       employees:[{"id":1,"name":"John","Salary":30000},
       {"id":2,"name":"Trump","Salary":10000},
-      {"id":3,"name":"Peter","Salary":99000}]
+      {"id":3,"name":"Peter","Salary":99000}],
+      students:[{"id":624235044,"name":"Niracha","lastName": "Wanchitnai","score":20},
+      {"id":624235034,"name":"Wirakran","lastName": "Somjan","score":25},
+      {"id":624235036,"name":"Yada","lastName": "Binlateh","score":50},
+      {"id":624235036,"name":"Kuasawan","lastName": "Kuji","score":30}]
+      
 
     }
   },
